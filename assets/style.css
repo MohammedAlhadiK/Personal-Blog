@@ -4,16 +4,6 @@
 @import url('../css/colors.css');
 
 /* Global Styles */
-:root {
-  /* Color Variables */
-  --primary-color: #3498db; /* Soft blue */
-  --hover-color: #2ecc71; /* Green accent */
-  --background-color: #f7f9fc; /* Light background */
-  --text-color: #333; /* Dark text */
-  --text-muted: #777; /* Muted text */
-  --light-gray: #f5f5f5; /* Light gray for backgrounds */
-  --dark-gray: #222; /* Darker text color for contrast */
-}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -185,7 +175,7 @@ footer ul li a:hover {
   color: var(--hover-color);
 }
 
-/* Media Queries for Responsive Design */
+/* Media Queries */
 @media (max-width: 1200px) {
   .blog-posts {
     grid-template-columns: repeat(3, 1fr);
