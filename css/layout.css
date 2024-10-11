@@ -1,0 +1,65 @@
+/* Navbar Layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+/* Flexbox for Author Info */
+.author-info {
+  display: flex;
+  align-items: center;
+  padding: 2%;
+}
+
+/* Blog Posts Layout */
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 20px; /* Space between cards */
+  margin: 40px 0; /* Margin for separation from other sections */
+}
+
+/* Blog Post Card Styles */
+.post-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 calc(30% - 20px); /* Adjust for 3 items per row */
+  overflow: hidden;
+  margin-bottom: 20px; /* Space between cards */
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .blog-posts {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+
+  #skills ul {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-posts {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+
+  #skills ul {
+    grid-template-columns: 1fr; /* 1 item per row */
+  }
+}
+
+@media (max-width: 400px) {
+  #skills ul li {
+    flex: 1 1 100%; /* 1 item per row on very small screens */
+  }
+}

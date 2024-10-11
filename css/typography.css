@@ -1,0 +1,209 @@
+/* Typography Styles */
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* Headers */
+h2 {
+  font-size: 2.2em;
+  margin: 20px 0; /* Added margin for spacing */
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+/* General Section Styling */
+section {
+  margin: 20px 0; /* Uniform margin for all sections */
+  padding: 20px; /* Uniform padding for all sections */
+  border-bottom: 2px solid var(--light-gray);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.8),
+    rgba(240, 240, 240, 0.8)
+  ); /* Gradient background */
+  transition: background-color 0.3s ease;
+}
+
+/* About Me Section */
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff; /* Optional: Keep this for individual section style */
+  margin-bottom: 40px; /* Space below this section */
+}
+
+.about-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-content h1 {
+  font-size: 3rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.about-content .subtitle {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.about-content .bio {
+  font-size: 1.1rem;
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Circular image */
+}
+
+/* Image Gallery */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.gallery-item {
+  width: 120px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Style for Education and Projects */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px; /* Space below each card */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 1.5em;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Grid Layout for Education and Projects */
+.education-grid,
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Skills Section - Displaying Skills with Fixed Width */
+#skills {
+  padding: 20px 0;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(5, 1fr); /* Five skills per row */
+  gap: 10px; /* Space between skills */
+}
+
+#skills ul li {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px; /* Maintain padding for aesthetics */
+  font-size: 0.9em; /* Slightly smaller font size */
+  border-radius: 50px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#skills ul li:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* Certifications - Two per Row */
+#certifications ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+#certifications ul li {
+  padding: 15px;
+  font-size: 1.1em;
+  color: var(--dark-gray);
+  background: var(--light-gray);
+  border-left: 8px solid var(--secondary-color);
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#certifications ul li:hover {
+  background-color: #e8f5e9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+section {
+  margin: 15px;
+}
+ul {
+  margin: 0;
+}
