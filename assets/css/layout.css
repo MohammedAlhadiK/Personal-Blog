@@ -63,3 +63,29 @@
     flex: 1 1 100%;
   }
 }
+
+/* Blog Posts Grid */
+@media (max-width: 1200px) {
+  .blog-posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .blog-posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-posts {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* About Me Flex Layout */
+@media (max-width: 900px) {
+  .about-me {
+    flex-direction: column;
+  }
+}
